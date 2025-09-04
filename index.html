@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra 2 Tutoring Session Outline & Slideshows</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for better aesthetics and font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top for longer content */
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        h1 {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 800; /* Extra bold */
+            color: #1f2937; /* Dark gray */
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem; /* 32px */
+            font-weight: 700; /* Bold */
+            color: #3b82f6; /* Blue */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb; /* Light gray border */
+        }
+        h3 {
+            font-size: 1.5rem; /* 24px */
+            font-weight: 600; /* Semi-bold */
+            color: #4b5563; /* Medium gray */
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            line-height: 1.6;
+            color: #4b5563; /* Medium gray */
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 1.5rem; /* 24px */
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            color: #1f2937; /* Darker text for emphasis */
+        }
+        .example-problem {
+            background-color: #f9fafb; /* Very light gray */
+            border-left: 4px solid #93c5fd; /* Light blue border */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #eff6ff;
+            font-weight: 600;
+            color: #1e40af;
+        }
+        .slideshow-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            margin: auto;
+            min-height: 500px; /* Ensure consistent height for all slides */
+            position: relative;
+        }
+        .slide {
+            display: none; /* Hide all slides by default */
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block; /* Show the active slide */
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .control-button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+            cursor: pointer;
+        }
+        .control-button:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+        .control-button:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Algebra 2 Tutoring Session Outline</h1>
+        <p class="text-lg text-gray-600 text-center mb-8">This outline provides a structured approach to covering essential Algebra 2 topics, designed for one-hour tutoring sessions. It's flexible and can be adapted to individual student progress and specific learning goals.</p>
+
+        <!-- New Overview Section -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-inner mb-8">
+            <h2 class="text-center text-2xl font-bold text-gray-800 border-none pb-0">Algebra 2 Overview</h2>
+            <p class="text-gray-700 mt-4">
+                Algebra 2 builds on the foundations of Algebra 1, diving deeper into more complex functions, equations, and mathematical concepts. This course will cover everything from quadratic functions and logarithms to matrices and conic sections, giving you a powerful set of tools to solve advanced problems.
+            </p>
+            <h3 class="text-center text-xl font-semibold text-blue-600 mt-6">Course Session Summary</h3>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+                <li>We start with a review of functions and their graphs.</li>
+                <li>We'll then move into advanced topics like quadratic and polynomial functions, rational expressions, and radicals.</li>
+                <li>The second half of the course focuses on exponential and logarithmic functions, matrices, and sequences.</li>
+                <li>We finish with an introduction to probability and a comprehensive final review.</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
+                <div>
+                    <h3 class="text-center text-xl font-semibold text-blue-600">Meet Your AI Tutor: Marvin</h3>
+                    <p class="text-center text-gray-700 mt-2">
+                        To help you along the way, we've set up an AI tutor named <strong>"Marvin"</strong>. Marvin is available to assist you with practice problems, explain concepts in a different way, or answer any questions you have.
+                    </p>
+                    <p class="text-center mt-4">
+                        <a href="https://jsmith66usa1.github.io/marvin/" target="_blank" class="control-button inline-block">Set Up Marvin the AI Tutor</a>
+                    </p>
+                </div>
+                <div class="mt-8 sm:mt-0">
+                    <h3 class="text-center text-xl font-semibold text-blue-600">Algebra 2 Digital Chalkboard</h3>
+                    <p class="text-center text-gray-700 mt-2">
+                        For an interactive place to practice and write out problems, you can use the digital chalkboard.
+                    </p>
+                    <p class="text-center mt-4">
+                        <a href="https://jsmith66usa1.github.io/algebra2cb/" target="_blank" class="control-button inline-block">Go to Digital Chalkboard</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 1 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-1-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 2 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-2-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 3 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-3-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 4 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-4-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 5 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-5-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 6 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-6-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 7 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-7-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 8 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-8-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 9 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-9-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 10 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-10-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 11 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-11-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 12 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-12-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 13 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-13-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 14 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-14-slideshow-container" class="session-slideshow"></div>
+
+        <!-- Session 15 -->
+        <hr class="border-t-2 border-gray-200 my-4">
+        <div id="session-15-slideshow-container" class="session-slideshow"></div>
+
+        <p class="text-gray-600 italic text-center mt-8">This outline provides a solid framework for your tutoring business. Remember to tailor each session to the individual student's learning style and pace. Good luck with your new venture!</p>
+    </div>
+
+    <script>
+        const sessionData = [
+            {
+                id: 1,
+                title: "Foundations of Algebra 2",
+                slides: [
+                    {
+                        title: "Session 1: Foundations of Algebra 2",
+                        content: `
+                        <h3>Key Topics</h3>
+                        <ul>
+                            <li><strong>Review:</strong> Refresh your knowledge of solving multi-step equations and inequalities.</li>
+                            <li><strong>Properties of Real Numbers:</strong> Revisit foundational properties like commutative, associative, and distributive.</li>
+                            <li><strong>Solving Literal Equations:</strong> Rearranging formulas to solve for a specific variable.</li>
+                        </ul>
+                        <h3>Skills to Master</h3>
+                        <ul>
+                            <li>Efficiently solving complex linear equations and inequalities.</li>
+                            <li>Identify and apply the properties of real numbers in multi-step problems.</li>
+                            <li>Rearrange equations and formulas to isolate a variable.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Solving Literal Equations",
+                        content: `
+                        <p>A <strong>literal equation</strong> is an equation with more than one variable. Solving it means rearranging the formula to isolate a specific variable.</p>
+                        <h3>Example:</h3>
+                        <p>The formula for the area of a trapezoid is A = ½h(b₁ + b₂). Solve this equation for b₁.</p>
+                        <p>1.  Multiply both sides by 2: 2A = h(b₁ + b₂).</p>
+                        <p>2.  Divide both sides by h: 2A/h = b₁ + b₂.</p>
+                        <p>3.  Subtract b₂ from both sides: 2A/h - b₂ = b₁.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: "Functions and Their Graphs",
+                slides: [
+                    {
+                        title: "Session 2: Functions and Their Graphs",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>What is a Function?:</strong> Understanding relations, functions, and the vertical line test.</li>
+                            <li><strong>Function Notation:</strong> Using f(x) to evaluate and represent functions.</li>
+                            <li><strong>Domain and Range:</strong> Identifying the set of all possible input and output values.</li>
+                            <li><strong>Graphing Parent Functions:</strong> Linear, quadratic (y=x²), and absolute value (y=|x|).</li>
+                        </ul>
+                        <h3>Skills to Master:</h3>
+                        <ul>
+                            <li>Determine if a relation is a function.</li>
+                            <li>Evaluate functions for given input values.</li>
+                            <li>Analyze a graph to find its domain and range.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Function Notation",
+                        content: `
+                        <p>Function notation, such as f(x), replaces the 'y' in an equation and is read as "f of x". It highlights that the output value depends on the input value.</p>
+                        <h3>Example:</h3>
+                        <p>If f(x) = 3x - 5, find f(4).</p>
+                        <p>Substitute 4 for x in the equation: f(4) = 3(4) - 5 = 12 - 5 = 7.</p>
+                        <p>The solution is f(4) = 7, which corresponds to the point (4, 7) on the graph.</p>
+                        `
+                    },
+                    {
+                        title: "Domain and Range",
+                        content: `
+                        <ul>
+                            <li>The <strong>domain</strong> is the set of all possible input values (x-values).</li>
+                            <li>The <strong>range</strong> is the set of all possible output values (y-values).</li>
+                        </ul>
+                        <h3>Example:</h3>
+                        <p>Find the domain and range of the function f(x) = √(x+2).</p>
+                        <p>The expression under the square root cannot be negative. Therefore, x+2 ≥ 0, which means x ≥ -2.</p>
+                        <p><strong>Domain:</strong> [-2, ∞)</p>
+                        <p>The square root symbol means the output will always be positive. Therefore, f(x) ≥ 0.</p>
+                        <p><strong>Range:</strong> [0, ∞)</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: "Absolute Value Functions and Equations",
+                slides: [
+                    {
+                        title: "Session 3: Absolute Value",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Absolute Value:</strong> Reviewing the definition of absolute value.</li>
+                            <li><strong>Solving Absolute Value Equations:</strong> Understanding that there are often two solutions.</li>
+                            <li><strong>Solving Absolute Value Inequalities:</strong> Graphing "and" and "or" inequalities.</li>
+                            <li><strong>Graphing Absolute Value Functions:</strong> Transformations of the parent function y = |x|.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Solving Absolute Value Equations",
+                        content: `
+                        <p>To solve an absolute value equation, you must consider both the positive and negative cases.</p>
+                        <h3>Example:</h3>
+                        <p>Solve |2x - 1| = 7.</p>
+                        <p>Case 1: 2x - 1 = 7, so 2x = 8, and x = 4.</p>
+                        <p>Case 2: 2x - 1 = -7, so 2x = -6, and x = -3.</p>
+                        <p>The solutions are x = 4 and x = -3.</p>
+                        `
+                    },
+                    {
+                        title: "Graphing Absolute Value Functions",
+                        content: `
+                        <p>The graph of an absolute value function is a "V" shape. The general form is y = a|x - h| + k.</p>
+                        <ul>
+                            <li>h shifts the graph horizontally.</li>
+                            <li>k shifts the graph vertically.</li>
+                            <li>a stretches or shrinks the graph and reflects it across the x-axis if negative.</li>
+                        </ul>
+                        <h3>Example:</h3>
+                        <p>Describe the transformations on the graph of y = |x + 3| - 2.</p>
+                        <p>The graph is shifted 3 units left (because of the +3) and 2 units down (because of the -2).</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: "Quadratic Functions and Complex Numbers",
+                slides: [
+                    {
+                        title: "Session 4: Quadratics & Complex Numbers",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Graphing Quadratics:</strong> Understanding parabolas in standard, vertex, and intercept form.</li>
+                            <li><strong>Solving Quadratic Equations:</strong> Using the quadratic formula, factoring, and completing the square.</li>
+                            <li><strong>The Discriminant:</strong> Determining the number of real solutions.</li>
+                            <li><strong>Complex Numbers:</strong> Introduction to i = √-1 and operations with complex numbers.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Solving with the Quadratic Formula",
+                        content: `
+                        <p>The quadratic formula is a universal tool for solving any quadratic equation in the form ax² + bx + c = 0.</p>
+                        <p class="text-2xl text-center font-bold my-4"> x = (-b ± √(b² - 4ac))/(2a) </p>
+                        <h3>Example:</h3>
+                        <p>Solve 2x² + 5x - 3 = 0. Here, a=2, b=5, and c=-3.</p>
+                        <p>The solutions are x = (-5 ± √(5² - 4(2)(-3))) / 4 = (-5 ± √49) / 4, which gives x = (-5 ± 7) / 4. The two solutions are x = 2/4 = 1/2 and x = -12/4 = -3.</p>
+                        `
+                    },
+                    {
+                        title: "Introduction to Complex Numbers",
+                        content: `
+                        <p>A complex number is a number that can be expressed in the form a + bi, where a and b are real numbers, and i is the imaginary unit, defined as i = √-1.</p>
+                        <h3>Example:</h3>
+                        <p>Simplify √(-25).</p>
+                        <p>√(-25) = √(25 × -1) = √25 × √-1 = 5i.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 5,
+                title: "Polynomial Functions",
+                slides: [
+                    {
+                        title: "Session 5: Polynomial Functions",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Polynomials:</strong> Classifying polynomials by degree and number of terms.</li>
+                            <li><strong>Operations with Polynomials:</strong> Adding, subtracting, and multiplying.</li>
+                            <li><strong>Factoring Advanced Polynomials:</strong> Using methods like grouping and the sum/difference of cubes.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Multiplying Polynomials",
+                        content: `
+                        <p>To multiply polynomials, use the distributive property to multiply each term in the first polynomial by each term in the second.</p>
+                        <h3>Example:</h3>
+                        <p>Multiply (x + 2)(x² - 3x + 5).</p>
+                        <p>x(x² - 3x + 5) + 2(x² - 3x + 5)</p>
+                        <p>x³ - 3x² + 5x + 2x² - 6x + 10</p>
+                        <p>Combine like terms: x³ - x² - x + 10.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 6,
+                title: "Rational Expressions and Equations",
+                slides: [
+                    {
+                        title: "Session 6: Rational Expressions",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Simplifying Rational Expressions:</strong> Factoring the numerator and denominator to find common factors.</li>
+                            <li><strong>Multiplying and Dividing:</strong> Using the same rules as fractions.</li>
+                            <li><strong>Adding and Subtracting:</strong> Finding a common denominator.</li>
+                            <li><strong>Solving Rational Equations:</strong> Clearing denominators by multiplying by the LCD.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Simplifying and Solving",
+                        content: `
+                        <p>To simplify a rational expression, first factor the top and bottom. Then, cancel out any factors they have in common.</p>
+                        <h3>Example:</h3>
+                        <p>Simplify (x² - 4)/(x² + 3x + 2)</p>
+                        <p>Factor: ((x-2)(x+2)) / ((x+1)(x+2)). Cancel the (x+2) to get (x - 2) / (x + 1).</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 7,
+                title: "Radical Functions and Rational Exponents",
+                slides: [
+                    {
+                        title: "Session 7: Radicals and Exponents",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Simplifying Radicals:</strong> Finding the perfect square, cube, etc., factors.</li>
+                            <li><strong>Operations with Radicals:</strong> Adding, subtracting, multiplying, and rationalizing the denominator.</li>
+                            <li><strong>Rational Exponents:</strong> Understanding how fractional exponents relate to roots.</li>
+                            <li><strong>Solving Radical Equations:</strong> Isolating the radical and raising both sides to a power.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Rational Exponents",
+                        content: `
+                        <p>A rational exponent, like x^(m/n), is a way of representing both a root and a power. It means the n-th root of x to the power of m: n√(x^m).</p>
+                        <h3>Example:</h3>
+                        <p>Simplify 16^(3/2).</p>
+                        <p>This is the same as (√16)³, which is 4³ = 64.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 8,
+                title: "Exponential and Logarithmic Functions",
+                slides: [
+                    {
+                        title: "Session 8: Exponential & Logarithmic Functions",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Exponential Functions:</strong> Forms like y = a · b^x, and graphs of growth vs. decay.</li>
+                            <li><strong>Logarithms:</strong> Understanding logarithms as the inverse of exponentials.</li>
+                            <li><strong>Logarithm Properties:</strong> Product, quotient, and power rules for logs.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Logarithms",
+                        content: `
+                        <p>A logarithm answers the question: "What exponent do I need to raise this base to in order to get that number?"</p>
+                        <p>The statement b^y = x is equivalent to log_b(x) = y.</p>
+                        <h3>Example:</h3>
+                        <p>Evaluate log₂(8).</p>
+                        <p>This asks: "What power do I raise 2 to in order to get 8?" Since 2³ = 8, the answer is 3.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 9,
+                title: "Solving Exponential and Logarithmic Equations",
+                slides: [
+                    {
+                        title: "Session 9: Solving Exponential & Logarithmic Equations",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Solving Exponential Equations:</strong> Using logarithms to get the variable out of the exponent.</li>
+                            <li><strong>Solving Logarithmic Equations:</strong> Using exponents to eliminate the logarithm.</li>
+                            <li><strong>Change of Base Formula:</strong> Using a calculator to evaluate logs of any base.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Solving Exponential Equations",
+                        content: `
+                        <p>If you can't get the same base, take the logarithm of both sides to bring the exponent down.</p>
+                        <h3>Example:</h3>
+                        <p>Solve 5ˣ = 125.</p>
+                        <p>Since 125 = 5³, we can set the exponents equal to each other: 5ˣ = 5³, so x = 3.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 10,
+                title: "Systems of Equations",
+                slides: [
+                    {
+                        title: "Session 10: Systems of Equations",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Review of Linear Systems:</strong> Substitution and elimination.</li>
+                            <li><strong>Solving Non-Linear Systems:</strong> Solving a system with a linear and a quadratic equation.</li>
+                            <li><strong>Systems of Inequalities:</strong> Graphing and finding the solution region.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Solving Non-Linear Systems",
+                        content: `
+                        <p>These systems can have zero, one, or two solutions. Substitution is often the easiest method to solve them.</p>
+                        <h3>Example:</h3>
+                        <p>Solve the system: y = x² - 3x - 4 and y = -x + 4.</p>
+                        <p>Set the two equations equal to each other: x² - 3x - 4 = -x + 4.</p>
+                        <p>Rearrange into a quadratic equation equal to zero: x² - 2x - 8 = 0.</p>
+                        <p>Factor: (x - 4)(x + 2) = 0. Solutions are x = 4 and x = -2. Substitute these back into one of the original equations to find the corresponding y-values.</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 11,
+                title: "Matrices",
+                slides: [
+                    {
+                        title: "Session 11: Matrices",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Introduction to Matrices:</strong> Understanding matrix dimensions.</li>
+                            <li><strong>Matrix Operations:</strong> Adding, subtracting, and scalar multiplication.</li>
+                            <li><strong>Matrix Multiplication:</strong> The rules for multiplying two matrices.</li>
+                            <li><strong>Determinants and Inverses:</strong> Solving systems of equations using matrices.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Matrix Operations",
+                        content: `
+                        <p>To add or subtract matrices, they must have the same dimensions. You simply add or subtract the corresponding elements.</p>
+                        <h3>Example:</h3>
+                        <p>| 2  3 | + | 0  5 | = | 2+0  3+5 | = | 2  8 |</p>
+                        <p>| 1  4 |   | 6  7 |   | 1+6  4+7 |   | 7  11 |</p>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 12,
+                title: "Conic Sections",
+                slides: [
+                    {
+                        title: "Session 12: Conic Sections",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Introduction to Conic Sections:</strong> Understanding how they are formed.</li>
+                            <li><strong>Circles:</strong> Standard form equation and graphing.</li>
+                            <li><strong>Parabolas, Ellipses, and Hyperbolas:</strong> Standard form equations and graphing key features.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Equations of Conic Sections",
+                        content: `
+                        <ul>
+                            <li><strong>Circle:</strong> (x-h)² + (y-k)² = r²</li>
+                            <li><strong>Parabola:</strong> y = a(x-h)² + k or x = a(y-k)² + h</li>
+                            <li><strong>Ellipse:</strong> (x-h)²/a² + (y-k)²/b² = 1</li>
+                            <li><strong>Hyperbola:</strong> (x-h)²/a² - (y-k)²/b² = 1</li>
+                        </ul>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 13,
+                title: "Sequences and Series",
+                slides: [
+                    {
+                        title: "Session 13: Sequences & Series",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Sequences:</strong> Differentiating between arithmetic and geometric sequences.</li>
+                            <li><strong>Formulas:</strong> Using formulas to find the nth term of a sequence.</li>
+                            <li><strong>Series:</strong> Finding the sum of a finite or infinite series.</li>
+                            <li><strong>Summation Notation:</strong> Understanding and evaluating expressions with Σ.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Arithmetic vs. Geometric",
+                        content: `
+                        <ul>
+                            <li>An <strong>arithmetic sequence</strong> has a common difference (d) between consecutive terms. For example: 3, 7, 11, 15... (d=4).</li>
+                            <li>A <strong>geometric sequence</strong> has a common ratio (r) between consecutive terms. For example: 2, 6, 18, 54... (r=3).</li>
+                        </ul>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 14,
+                title: "Probability and Statistics",
+                slides: [
+                    {
+                        title: "Session 14: Probability & Statistics",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Counting Principle:</strong> Using multiplication to find the total number of outcomes.</li>
+                            <li><strong>Permutations:</strong> The number of ways to arrange items in a specific order.</li>
+                            <li><strong>Combinations:</strong> The number of ways to choose items where order doesn't matter.</li>
+                            <li><strong>Basic Probability:</strong> Calculating the probability of an event.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Permutations vs. Combinations",
+                        content: `
+                        <ul>
+                            <li><strong>Permutations (Order matters):</strong> How many ways can you arrange 3 books on a shelf from a set of 5? This is a permutation.</li>
+                            <li><strong>Combinations (Order does not matter):</strong> How many ways can you choose 3 books from a set of 5 to take with you on a trip? This is a combination.</li>
+                        </ul>
+                        `
+                    }
+                ]
+            },
+            {
+                id: 15,
+                title: "Advanced Functions and Review",
+                slides: [
+                    {
+                        title: "Session 15: Advanced Functions & Review",
+                        content: `
+                        <h3>Key Topics:</h3>
+                        <ul>
+                            <li><strong>Inverse Functions:</strong> Finding the inverse of a function.</li>
+                            <li><strong>Rational Functions:</strong> Graphing and analyzing asymptotes and holes.</li>
+                            <li><strong>Comprehensive Review:</strong> A final session to work through a variety of problems from all major Algebra 2 topics.</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: "Inverse Functions",
+                        content: `
+                        <p>The inverse of a function "undoes" the original function. To find the inverse, swap x and y and then solve for the new y.</p>
+                        <h3>Example:</h3>
+                        <p>Find the inverse of f(x) = 2x + 1.</p>
+                        <p>1.  Replace f(x) with y: y = 2x + 1.</p>
+                        <p>2.  Swap x and y: x = 2y + 1.</p>
+                        <p>3.  Solve for y: x - 1 = 2y, so y = (x - 1) / 2.</p>
+                        `
+                    }
+                ]
+            }
+        ];
+
+        // JavaScript to dynamically generate and control the slideshows
+        document.addEventListener('DOMContentLoaded', () => {
+            function createSlideshow(data, container) {
+                // Add the session title
+                const title = document.createElement('h2');
+                title.textContent = `Session ${data.id}: ${data.title}`;
+                container.appendChild(title);
+
+                const slideshowHTML = document.createElement('div');
+                slideshowHTML.className = 'slideshow-container';
+                slideshowHTML.innerHTML = `
+                    <div class="slides-wrapper">
+                        ${data.slides.map((slide, index) => `
+                            <div class="slide" id="slide-${data.id}-${index + 1}">
+                                <h1>${slide.title}</h1>
+                                ${slide.content}
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="controls">
+                        <button class="control-button prev-btn">Previous</button>
+                        <div class="slide-number text-gray-500 font-semibold">Slide 1 of ${data.slides.length}</div>
+                        <button class="control-button next-btn">Next</button>
+                    </div>
+                `;
+                container.appendChild(slideshowHTML);
+            }
+
+            function initializeSlideshow(slideshowContainer) {
+                const slides = slideshowContainer.querySelectorAll('.slide');
+                const prevBtn = slideshowContainer.querySelector('.prev-btn');
+                const nextBtn = slideshowContainer.querySelector('.next-btn');
+                const slideNumberDisplay = slideshowContainer.querySelector('.slide-number');
+                let currentSlideIndex = 0;
+
+                function updateSlideshow() {
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    if (slides.length > 0) {
+                        slides[currentSlideIndex].classList.add('active');
+                    }
+                    if (slides.length > 0) {
+                        slideNumberDisplay.textContent = `Slide ${currentSlideIndex + 1} of ${slides.length}`;
+                    } else {
+                        slideNumberDisplay.textContent = `Slide 0 of 0`;
+                    }
+                    prevBtn.disabled = currentSlideIndex === 0;
+                    nextBtn.disabled = currentSlideIndex === slides.length - 1;
+                }
+
+                nextBtn.addEventListener('click', () => {
+                    if (currentSlideIndex < slides.length - 1) {
+                        currentSlideIndex++;
+                        updateSlideshow();
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    if (currentSlideIndex > 0) {
+                        currentSlideIndex--;
+                        updateSlideshow();
+                    }
+                });
+
+                updateSlideshow();
+            }
+
+            // Loop through all session data and create/initialize a slideshow for each.
+            sessionData.forEach(session => {
+                const container = document.getElementById(`session-${session.id}-slideshow-container`);
+                if (container) {
+                    createSlideshow(session, container);
+                    initializeSlideshow(container.querySelector('.slideshow-container'));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
